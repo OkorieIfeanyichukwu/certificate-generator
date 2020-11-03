@@ -1,0 +1,38 @@
+body{
+    background:#eee;
+}
+
+nav{
+    position: relative;
+    background:#222;
+    height:40px;
+    z-index:900;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    position: relative;
+    margin-top:auto;
+    margin-bottom:auto;
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    border-radius:2px;
+    padding:6px;
+    width:auto;
+    margin:0 6px 0 6px;
+    
+}
+nav ul li a{
+    color:#fff;
+
+}
+nav ul li a:hover{
+    color: #777;
+    text-decoration: none;
+}
+nav ul .active{
+    background: cadetblue;
+
+}
