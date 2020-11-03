@@ -12,6 +12,7 @@ nav{
 }
 nav ul{
     position: relative;
+    left:-20px;
     margin-top:auto;
     margin-bottom:auto;
     display: flex;
@@ -21,7 +22,7 @@ nav ul li{
     border-radius:2px;
     padding:6px;
     width:auto;
-    margin:0 6px 0 6px;
+    margin:0 0.5vw 0 0.5vw;
     
 }
 nav ul li a{
