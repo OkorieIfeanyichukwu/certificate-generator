@@ -2,15 +2,14 @@ body{
     background:#eee;
 }
 
-nav{
+#first{
     position: relative;
-    background:#222;
-    height:40px;
-    z-index:900;
+    background:#fff;
+    height:45px;
     display: flex;
     align-items: center;
 }
-nav ul{
+#first ul{
     position: relative;
     left:-20px;
     margin-top:auto;
@@ -18,22 +17,60 @@ nav ul{
     display: flex;
     list-style: none;
 }
-nav ul li{
-    border-radius:2px;
-    padding:6px;
-    width:auto;
-    margin:0 0.5vw 0 0.5vw;
-    
+#first ul li{
+    margin-right: 5px;
+    margin-left: 5px;
 }
-nav ul li a{
-    color:#fff;
+
+.grid {
+	position:relative;
+	cursor:pointer;
+	top:4px;
+	width:15px;
+	height:15px;
+}
+.grid span{
+	position:absolute;
+	width:6px;
+	height:6px;
+	background:white;
+	border: 0.5px solid black;
+	opacity:0.6;
 
 }
-nav ul li a:hover{
-    color: #777;
+.grid span:nth-child(2){
+	top:8px;
+}
+.grid span:nth-child(3){
+	left:8px;
+}
+.grid span:nth-child(4){
+	top:8px;
+	left:8px;
+}
+
+section{
+    position: relative;
+    background:rgb(252, 252, 253);
+    width:75vw;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    height:65vh;
+}
+
+#content  {
+    background: red;
+    position: relative;;
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+
+#content a{
+    color:#111;
     text-decoration: none;
-}
-nav ul .active{
-    background: cadetblue;
-
+    right:0;
+    margin-left: 4px;
+    margin-right: 4px;
 }
