@@ -1,5 +1,7 @@
 body{
     background:#eee;
+    width:100%;
+    height:100%;
 }
 
 #first{
@@ -51,26 +53,113 @@ body{
 
 section{
     position: relative;
-    background:rgb(252, 252, 253);
-    width:75vw;
-    margin-top:50px;
+    background:-webkit-linear-gradient(top,#ffffff 55%,#70b5eb,#ff9900);
+    width:100vw;
+    margin-top:70px;
     margin-left:auto;
     margin-right:auto;
-    height:65vh;
+    height:55vh;
+    overflow:auto;
 }
-
+section p{
+    position:absolute;
+    width:100px;
+    margin-left:10px;
+    
+}
+section p::first-letter{
+    font-size:220%;
+    font-weight: lighter;
+    
+}
+section #certificate{
+    position:absolute;
+    margin-top:7px;
+    font-size: smaller;
+}
+section #plus{
+    font-size: smaller;
+    position:absolute;
+    margin-top:18px;
+    color:#70b5eb;
+}
 #content  {
-    background: red;
-    position: relative;;
+    position: relative;
     list-style: none;
     display:flex;
-    align-items: center;
+    float:right;
+    height:30px;
+    margin-top:15px;
+    font-size: small;
 }
 
 #content a{
+    position:relative;
     color:#111;
     text-decoration: none;
-    right:0;
+    right:10px;
     margin-left: 4px;
     margin-right: 4px;
+}
+form{
+    position: relative;
+    text-align:center;
+    padding-top:15%;
+
+}
+#header{
+    margin-bottom:-20px;
+}
+
+.fullname{
+    background:#98c9ee;
+width:50%;
+height:35px;
+border-radius:8px;
+border:2px solid rgba(13, 13, 241, 0.685);
+padding-left:30px;
+margin-top:15px;
+}
+.button1{
+    width:130px;
+    height:30px;
+    background:rgba(29, 132, 216, 0.781);
+    border-color:rgba(29, 132, 216, 0.781);
+margin-top:20px;
+border-radius:6px;
+
+}
+
+.button1:hover{
+    background:blue;
+}
+.button1 a{
+    text-decoration: none;
+    color:#fff;
+    opacity:0.8;
+}
+
+
+@media screen and  (min-width:650px){
+    form{
+        position: relative;
+        text-align:center;
+        padding-top:70px;
+    
+    }
+    section{
+    background:-webkit-linear-gradient(top,#ffffff 60%,#70b5eb,#ff9900);
+        width:75vw;
+
+    }
+    #content{
+        font-size: medium;
+    }
+    #content a{
+        right:40px;
+    }
+}
+#image{
+width:37%;
+
 }

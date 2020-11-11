@@ -42,11 +42,21 @@
                 </nav>
                         
                         <form method="POST" action="">
-                            <h2 id="header">Please enter your</h2>
-                            <h2>name</h2>
-                            <h6>kindly enter your full name, your first name first</h6>
-                            <input type="text" placeholder="Peter Olugbenga" class="fullname" name="fullName"><br>
-                            <button type="submit" name="submit" class="button1" ><a href="form.html">Continue</a></button>
+                            <h2 id="header">Other details</h2>
+                            <!--<h2>name</h2>-->
+                            <h6>fill in other details for your certificate</h6>
+                            <br><br>
+                            <label>Full Name:</label><br>
+                            <input type="text" placeholder="Peter Olugbenga" class="fullname" name="fullName"><br><br>
+                            <label>Other names:</label><br>
+                            <input type="text" placeholder="Olasunkanmi" class="fullname" name="otherName"><br><br>
+                            <label>Email:</label><br>
+                            <input type="email" placeholder="Olasunkanmifinesse@gmail.com" class="fullname" name="email"><br><br>
+                            <label>upload an image:</label><br>
+                            <input id="image" class="fullname" placeholder="choose image">
+                            <button type="submit" name="image" id="inside" class="button1"><a href="#">choose image</a></button>
+                            <br><br>
+                            <button type="submit" name="generate" class="button1" ><a href="certificate.html">Generate</a></button>
                         </form>
 
             </section>
