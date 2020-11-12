@@ -9,6 +9,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css"/>
         <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
     </head>
     <body>
         <nav id="first">
@@ -32,7 +33,7 @@
             <section>
                 <p>C<span id="certificate">ertificate </span><span id="plus">Plus</span></p>
 
-                <nav id="content">
+                <nav class="content">
                     <ul>
                             <a href="index.html">Home</a>
                             <a href="#">About</a>
@@ -52,10 +53,18 @@
                             <input type="text" placeholder="Olasunkanmi" class="fullname" name="otherName"><br><br>
                             <label>Email:</label><br>
                             <input type="email" placeholder="Olasunkanmifinesse@gmail.com" class="fullname" name="email"><br><br>
-                            <label>upload an image:</label><br>
-                            <input id="image" class="fullname" placeholder="choose image">
-                            <button type="submit" name="image" id="inside" class="button1"><a href="#">choose image</a></button>
-                            <br><br>
+                            <label>upload an image:</label>
+                            <h6>(files should be less than 200kb)</h6><br>
+                            <div id="drag-drop">
+            
+                                    <i class="fas fa-cloud"><i class="fas fa-arrow-up"> Drag and drop files here
+                                    <label for="file-upload" class="button1">Browse..</label>
+                                    <input type="file" id="file-upload"name="image">
+                                        
+                                    </i></i>
+                                                        
+                            </div>
+                            <br>
                             <button type="submit" name="generate" class="button1" ><a href="certificate.html">Generate</a></button>
                         </form>
 
