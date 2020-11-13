@@ -61,7 +61,6 @@ section{
     border-top:2px #000 solid;
 }
 section p{
-    background:yellow;
     position:absolute;
     width:100px;
     margin-left:10px;
